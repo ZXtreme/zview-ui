@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as t,O as o}from"./chunks/framework.20f443a3.js";const p=JSON.parse('{"title":"设计","description":"","frontmatter":{},"headers":[],"relativePath":"docs/design.md","lastUpdated":null}'),r={name:"docs/design.md"},d=o("",12),c=[d];function i(n,s,l,h,f,b){return a(),t("div",null,c)}const u=e(r,[["render",i]]);export{p as __pageData,u as default};
