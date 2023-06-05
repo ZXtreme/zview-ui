@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as o,Q as t}from"./chunks/framework.c4f31eb3.js";const v=JSON.parse('{"title":"暗黑模式","description":"","frontmatter":{},"headers":[],"relativePath":"docs/dark.md","lastUpdated":null}'),e={name:"docs/dark.md"},n=t("",6),r=[n];function l(i,p,c,h,k,d){return a(),o("div",null,r)}const y=s(e,[["render",l]]);export{v as __pageData,y as default};
