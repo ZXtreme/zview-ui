@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("../../utils/withInstall.js"),t=require("./src/breadcrumb.vue.js"),r=require("./src/breadcrumb-item.vue.js"),u=e.withInstall(t.default),a=e.withInstall(r.default);exports.Breadcrumb=u;exports.BreadcrumbItem=a;

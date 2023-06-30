@@ -1,0 +1,39 @@
+@import "common/icon.less";
+@import "common/color.less";
+@import "mixins/config.less";
+@import "mixins/mixins.less";
+
+.@{namespace}-upload-dragger {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: 180px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+
+  &:hover {
+    border: 1px dashed #409eff;
+  }
+
+  .@{namespace}-upload-content {
+    color: #606266;
+    text-align: center;
+
+    .@{namespace}-upload-icon {
+      font-size: 20px;
+    }
+
+    em {
+      font-style: normal;
+      color: #409eff;
+    }
+  }
+}
+
+.@{namespace}-upload-draggerenter {
+  border: 1px dashed #409eff;
+}

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "strict": false,
+    "target": "es2020",
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "rootDir": ".",
+    "paths": {
+      "@/*": [
+        "packages/components/src/*"
+      ],
+      "exam/*": [
+        "site/docs/examples/*"
+      ],
+      "locale/*": [
+        "packages/locale/*"
+      ],
+      "utils/*": [
+        "packages/utils/*"
+      ]
+    }
+  }
+}

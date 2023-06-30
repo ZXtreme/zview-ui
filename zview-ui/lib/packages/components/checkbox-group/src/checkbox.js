@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e={modelValue:{type:Boolean,default:!1},label:{type:String,default:""},disabled:{type:Boolean,default:!1},indeterminate:{type:Boolean,default:!1},border:{type:Boolean,default:!1}};exports.CheckBoxProps=e;

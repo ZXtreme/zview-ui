@@ -1,0 +1,93 @@
+@import "common/icon.less";
+@import "common/color.less";
+@import "mixins/config.less";
+@import "mixins/mixins.less";
+@import "common/transition.less";
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fade-in-out 0.3s;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  background: transparent;
+}
+
+.modal-header,
+.modal-footer {
+  display: flex;
+  padding: 15px;
+}
+
+.modal-header {
+  position: relative;
+  justify-content: space-between;
+  color: #4aae9b;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-footer {
+  flex-direction: column;
+  justify-content: flex-end;
+  border-top: 1px solid #eee;
+}
+
+.modal-body {
+  position: relative;
+  padding: 20px 10px;
+}
+
+.btn-close {
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  z-index: var(--hv-index-top);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 22px;
+  color: #eee;
+  cursor: pointer;
+  background: transparent;
+  background-color: var(--hv-text-color-regular);
+  border: none;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.btn-green {
+  margin-top: 10px;
+  color: white;
+  cursor: pointer;
+  background: #4aae9b;
+  border: 1px solid #4aae9b;
+  border-radius: 2px;
+}
+
+.modal-fade-enter,
+.modal-fade-leave-to {
+  opacity: 0;
+}
+
+.modal-fade-enter-active,
+.modal-fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+html.dark {
+  .btn-close {
+    background-color: var(--hv-text-color-regular-dark);
+  }
+}

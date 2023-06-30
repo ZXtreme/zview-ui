@@ -1,0 +1,20 @@
+{
+  "name": "@zview-plus/components",
+  "version": "1.0.0",
+  "description": "all components are settled here",
+  "module": "./index.ts",
+  "scripts": {
+    "build": "vite build"
+  },
+  "main": "./index.ts",
+  "keywords": [
+    "zview-ui",
+    "vue3组件库"
+  ],
+  "author": "zxtreme",
+  "license": "MIT",
+  "types": "vue-shim.d.ts",
+  "dependencies": {
+    "@zview-plus/utils": "workspace:^"
+  }
+}

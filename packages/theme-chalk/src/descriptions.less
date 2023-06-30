@@ -1,0 +1,199 @@
+@import "common/icon.less";
+@import "common/color.less";
+@import "mixins/config.less";
+@import "mixins/mixins.less";
+
+.@{namespace}-descriptions {
+  box-sizing: border-box;
+  font-size: var(--hv-font-size-base);
+  color: var(--hv-text-color-primary);
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    .@{namespace}-descriptions-title {
+      font-size: var(--hv-font-size-medium);
+      font-weight: bold;
+      color: var(--hv-text-color-primary);
+    }
+  }
+
+  .@{namespace}-descriptions-body {
+    background-color: var(--hv-fill-color-blank);
+
+    .@{namespace}-descriptions-table {
+      width: 100%;
+      border-spacing: 0;
+      border-collapse: collapse;
+      border: none;
+      border-color: var(--hv-color-white);
+
+      tbody {
+        border: none !important;
+      }
+
+      tr {
+        border: none !important;
+      }
+
+      tr:nth-child(2n) {
+        background-color: inherit !important;
+      }
+
+      .@{namespace}-descriptions-cell {
+        box-sizing: border-box;
+        font-size: var(--hv-font-size-medium);
+        font-weight: normal;
+        line-height: 23px;
+        text-align: left;
+
+        .@{namespace}-descriptions-label {
+          color: var(--hv-text-color-regular);
+        }
+
+        &-left {
+          text-align: left;
+        }
+
+        &-center {
+          text-align: center;
+        }
+
+        &-right {
+          text-align: right;
+        }
+      }
+
+      &.is-bordered-des {
+        .@{namespace}-descriptions-cell {
+          padding: 8px;
+          border: 1px solid var(--hv-border-color-light);
+        }
+      }
+
+      &:not(.is-bordered-des) {
+        .@{namespace}-descriptions-cell {
+          padding-bottom: 6px !important;
+          border: none !important;
+        }
+      }
+    }
+  }
+
+  .is-bordered-label {
+    font-weight: bold;
+    color: var(--hv-text-color-regular);
+    background: var(--hv-fill-color-light);
+  }
+
+  :not(.is-bordered-label) .is-vertical-label {
+    padding-bottom: 5px;
+  }
+
+  .@{namespace}-descriptions-content {
+    .@{namespace}-descriptions-cell .is-bordered-content {
+      color: var(--hv-text-color-primary);
+    }
+
+    &:not(.is-bordered-label) {
+      margin-left: 14px;
+    }
+  }
+}
+
+.@{namespace}-descriptions--small {
+  font-size: var(--hv-font-size-small);
+
+  .@{namespace}-descriptions-header {
+    margin-bottom: 8px;
+
+    .@{namespace}-descriptions-title {
+      font-size: var(--hv-font-size-base);
+    }
+  }
+
+  .@{namespace}-descriptions-body {
+    .@{namespace}-descriptions-table {
+      .@{namespace}-descriptions-cell {
+        font-size: var(--hv-font-size-small);
+      }
+
+      &.is-bordered-des {
+        .@{namespace}-descriptions-cell {
+          padding: 6px;
+        }
+      }
+
+      &:not(.is-bordered-des) {
+        .@{namespace}-descriptions-cell {
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .@{namespace}-descriptions-label {
+    &:not(.is-bordered-label) {
+      margin-right: 5px;
+    }
+
+    .@{namespace}-descriptions-cell:not(.is-bordered-label).is-vertical-label {
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.@{namespace}-descriptions--large {
+  font-size: var(--hv-font-size-large);
+
+  .@{namespace}-descriptions-header {
+    margin-bottom: 12px;
+
+    .@{namespace}-descriptions-title {
+      font-size: var(--hv-font-size-extra-large);
+    }
+  }
+
+  .@{namespace}-descriptions-body {
+    .@{namespace}-descriptions-table {
+      .@{namespace}-descriptions-cell {
+        font-size: var(--hv-font-size-large);
+      }
+
+      &.is-bordered-des {
+        .@{namespace}-descriptions-cell {
+          padding: 12px;
+        }
+      }
+
+      &:not(.is-bordered-des) {
+        .@{namespace}-descriptions-cell {
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .@{namespace}-descriptions-label {
+    &:not(.is-bordered-label) {
+      margin-right: 10px;
+    }
+
+    .@{namespace}-descriptions-cell:not(.is-bordered-label).is-vertical-label {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+html.dark {
+  .@{namespace}-descriptions .is-bordered-label {
+    background-color: transparent;
+  }
+
+  .@{namespace}-descriptions-body {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "zview-plus",
+  "version": "2.0.6",
+  "main": "lib/packages/index.js",
+  "module": "es/packages/index.mjs",
+  "files": [
+    "es",
+    "lib",
+    "theme-chalk"
+  ],
+  "keywords": [
+    "zview-ui",
+    "zview-plus",
+    "vue",
+    "vue3",
+    "zview"
+  ],
+  "unpkg": "dist/index.full.min.js",
+  "style": "theme-chalk/index.css",
+  "jsdelivr": "dist/index.full.min.js",
+  "author": "zxtreme",
+  "license": "MIT",
+  "description": "基于 Vue3 的 UI 组件库",
+  "typings": "lib/index.d.ts"
+}

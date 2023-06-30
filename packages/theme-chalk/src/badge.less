@@ -1,0 +1,65 @@
+@import "common/icon.less";
+@import "common/color.less";
+@import "mixins/config.less";
+@import "mixins/mixins.less";
+
+.@{namespace}-badge {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  margin-top: 10px;
+  margin-right: 28px;
+  vertical-align: middle;
+}
+
+#badgeBase() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #fff;
+  white-space: nowrap;
+  border-radius: 12px;
+  transform: translate(50%, -50%);
+}
+
+.@{namespace}-badge-type--danger {
+  background-color: var(--hv-color-danger);
+  #badgeBase();
+}
+
+.@{namespace}-badge-type--primary {
+  background-color: var(--hv-color-primary);
+  #badgeBase();
+}
+
+.@{namespace}-badge-type--success {
+  background-color: var(--hv-color-success);
+  #badgeBase();
+}
+
+.@{namespace}-badge-type--warning {
+  background-color: var(--hv-color-warning);
+  #badgeBase();
+}
+
+.@{namespace}-badge-type--info {
+  background-color: var(--hv-color-info);
+  #badgeBase();
+}
+
+.is-dot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--hv-color-danger);
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@zview-plus/theme-chalk",
+  "license": "MIT",
+  "main": "./src/index.less",
+  "module": "./src/index.less",
+  "scripts": {
+    "start": "gulp -f script/build/gulpfile.ts",
+    "build": "vite build"
+  }
+}

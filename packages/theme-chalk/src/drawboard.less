@@ -1,0 +1,46 @@
+@import "common/icon.less";
+@import "common/color.less";
+@import "mixins/config.less";
+@import "mixins/mixins.less";
+
+.@{namespace}-board {
+  display: block;
+}
+
+.@{namespace}-board-item1 {
+  display: flex;
+
+  button {
+    &:nth-child(n) {
+      margin-right: 5px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.@{namespace}-board-item2 {
+  display: flex;
+  margin: 5px 0;
+  align-items: center;
+
+  .@{namespace}-item2-right {
+    margin-right: 18px;
+  }
+
+  .@{namespace}-board-color-picker {
+    height: 32px;
+    width: 32px;
+    border: 1px solid rgb(220, 223, 230);
+    border-radius: 4px;
+    font-size: 0;
+    cursor: pointer;
+    padding: 1px 2px;
+
+    &:hover {
+      border: 1px solid rgb(192, 196, 204);
+    }
+  }
+}

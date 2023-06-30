@@ -1,0 +1,1 @@
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const e=require("./src/scrollbar.vue.js"),t=require("../../utils/withInstall.js"),l=t.withInstall(e.default);exports.default=l;

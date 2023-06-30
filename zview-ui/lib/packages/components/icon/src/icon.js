@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e={name:{type:String,default:""},dot:{type:Boolean},badge:{type:[String,Number]},color:{type:String}};exports.iconProps=e;

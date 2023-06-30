@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e={hours:{type:Number},minutes:{type:Number},seconds:{type:Number},title:{type:String,default:""}};exports.TimeSpinnerProps=e;

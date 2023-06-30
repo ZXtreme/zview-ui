@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const t=require("./src/checkbox-group.vue.js"),u=require("./src/checkbox.vue.js"),e=require("../../utils/withInstall.js"),o=e.withInstall(u.default),c=e.withInstall(t.default);exports.Checkbox=o;exports.CheckboxGroup=c;

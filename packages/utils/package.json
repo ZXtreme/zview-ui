@@ -1,0 +1,16 @@
+{
+  "name": "@zview-plus/utils",
+  "version": "1.0.0",
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "types": "index.d.ts"
+}

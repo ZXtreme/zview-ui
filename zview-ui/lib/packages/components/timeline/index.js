@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e=require("../../utils/withInstall.js"),t=require("./src/timeline.vue.js"),i=require("./src/timeline-item.vue.js"),l=e.withInstall(t.default),n=e.withInstall(i.default);exports.Timeline=l;exports.TimelineItem=n;

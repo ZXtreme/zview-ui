@@ -1,0 +1,405 @@
+@import "common/icon.less";
+@import "common/color.less";
+@import "mixins/config.less";
+@import "mixins/mixins.less";
+
+@__button_bg_color: var(--hv-color-primary);
+@__popover_bg_color: var(--hv-color-white);
+@__popover_bg_color_dark: var(--hv-color-black);
+@__box-shadow_color: var(--hv-box-shadow-dark);
+@__text-title-color: var(--hv-text-color-ordinary);
+@__boder-white: 6px solid var(--hv-bg-color);
+@__boder-black: 6px solid var(--h-border-color-light);
+@__boder-transparent: 6px solid transparent;
+@__dark-text-color: var(--hv-color-white);
+
+.popover-box {
+  --geticonsite: 0;
+
+  position: relative;
+  display: inline-block;
+
+  .popover-outbox {
+    position: absolute;
+    z-index: 10;
+    // min-width: 150px;
+    padding: 18px 20px;
+    background-color: @__popover_bg_color;
+    box-shadow: @__box-shadow_color;
+  }
+
+  &-content {
+    // min-width: 200px;
+    overflow: auto;
+
+    .popover-title {
+      margin-bottom: 12px;
+      font-size: 16px;
+      line-height: 1;
+      color: @__text-title-color;
+    }
+  }
+
+  .top {
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 12px;
+    transform: translateX(-50%);
+
+    .popover-arrow {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: @__boder-white;
+      border-right: @__boder-transparent;
+      border-bottom: @__boder-transparent;
+      border-left: @__boder-transparent;
+      transform: translateX(-50%);
+    }
+  }
+
+  .top-start {
+    bottom: 100%;
+    left: 0;
+    margin-bottom: 12px;
+
+    .popover-arrow {
+      position: absolute;
+      top: 100%;
+      left: var(--geticonsite);
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: @__boder-white;
+      border-right: @__boder-transparent;
+      border-bottom: @__boder-transparent;
+      border-left: @__boder-transparent;
+      transform: translateX(-50%);
+    }
+  }
+
+  .top-end {
+    right: 0;
+    bottom: 100%;
+    margin-bottom: 12px;
+
+    .popover-arrow {
+      position: absolute;
+      top: 100%;
+      right: var(--geticonsite);
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: @__boder-white;
+      border-right: @__boder-transparent;
+      border-bottom: @__boder-transparent;
+      border-left: @__boder-transparent;
+      transform: translateX(-50%);
+    }
+  }
+
+  .bottom {
+    top: 100%;
+    left: 50%;
+    margin-top: 12px;
+    transform: translateX(-50%);
+
+    .popover-arrow {
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: @__boder-transparent;
+      border-right: @__boder-transparent;
+      border-bottom: @__boder-white;
+      border-left: @__boder-transparent;
+      transform: translateX(-50%);
+    }
+  }
+
+  .bottom-start {
+    top: 100%;
+    left: 0;
+    margin-top: 12px;
+
+    .popover-arrow {
+      position: absolute;
+      bottom: 100%;
+      left: var(--geticonsite);
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: @__boder-transparent;
+      border-right: @__boder-transparent;
+      border-bottom: @__boder-white;
+      border-left: @__boder-transparent;
+      transform: translateX(-50%);
+    }
+  }
+
+  .bottom-end {
+    top: 100%;
+    right: 0;
+    margin-top: 12px;
+
+    .popover-arrow {
+      position: absolute;
+      right: var(--geticonsite);
+      bottom: 100%;
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: @__boder-transparent;
+      border-right: @__boder-transparent;
+      border-bottom: @__boder-white;
+      border-left: @__boder-transparent;
+      transform: translateX(-50%);
+    }
+  }
+
+  .left {
+    top: 50%;
+    right: 100%;
+    margin-right: 12px;
+    transform: translateY(-50%);
+
+    .popover-arrow {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: @__boder-transparent;
+      border-right: @__boder-transparent;
+      border-bottom: @__boder-transparent;
+      border-left: @__boder-white;
+      transform: translateY(-50%);
+    }
+  }
+
+  .left-start {
+    top: 0;
+    right: 100%;
+    margin-right: 12px;
+    background-color: var(--hv-bg-color);
+
+    .popover-arrow {
+      position: absolute;
+      top: var(--geticonsite);
+      left: 100%;
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: @__boder-transparent;
+      border-right: @__boder-transparent;
+      border-bottom: @__boder-transparent;
+      border-left: @__boder-white;
+      transform: translateY(-50%);
+    }
+  }
+
+  .left-end {
+    right: 100%;
+    bottom: 0;
+    margin-right: 12px;
+    background-color: var(--hv-bg-color);
+
+    .popover-arrow {
+      position: absolute;
+      bottom: var(--geticonsite);
+      left: 100%;
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: @__boder-transparent;
+      border-right: @__boder-transparent;
+      border-bottom: @__boder-transparent;
+      border-left: @__boder-white;
+      transform: translateY(-50%);
+    }
+  }
+
+  .right {
+    top: 50%;
+    left: 100%;
+    margin-left: 12px;
+    transform: translateY(-50%);
+
+    .popover-arrow {
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: @__boder-transparent;
+      border-right: @__boder-white;
+      border-bottom: @__boder-transparent;
+      border-left: @__boder-transparent;
+      transform: translateY(-50%);
+    }
+  }
+
+  .right-start {
+    --geticonsite: 0;
+
+    top: 0;
+    left: 100%;
+    margin-left: 12px;
+
+    .popover-arrow {
+      position: absolute;
+      top: var(--geticonsite);
+      right: 100%;
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: @__boder-transparent;
+      border-right: @__boder-white;
+      border-bottom: @__boder-transparent;
+      border-left: @__boder-transparent;
+      transform: translateY(-50%);
+    }
+  }
+
+  .right-end {
+    bottom: 0;
+    left: 100%;
+    margin-left: 12px;
+
+    .popover-arrow {
+      position: absolute;
+      right: 100%;
+      bottom: var(--geticonsite);
+      display: block;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: @__boder-transparent;
+      border-right: @__boder-white;
+      border-bottom: @__boder-transparent;
+      border-left: @__boder-transparent;
+      transform: translateY(-50%);
+    }
+  }
+
+  .reference-content {
+    display: inline-block;
+  }
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.6, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  opacity: 0;
+}
+
+html.dark {
+  .popover-outbox {
+    z-index: 2;
+    min-width: 150px;
+    padding: 18px 20px;
+    color: @__dark-text-color;
+    background-color: @__popover_bg_color_dark;
+  }
+
+  .popover-title {
+    color: @__dark-text-color;
+  }
+
+  .top {
+    .popover-arrow {
+      border-top: @__boder-black;
+    }
+  }
+
+  .top-start {
+    .popover-arrow {
+      border-top: @__boder-black;
+    }
+  }
+
+  .top-end {
+    .popover-arrow {
+      border-top: @__boder-black;
+    }
+  }
+
+  .bottom {
+    .popover-arrow {
+      border-bottom: @__boder-black;
+    }
+  }
+
+  .bottom-start {
+    .popover-arrow {
+      border-bottom: @__boder-black;
+    }
+  }
+
+  .bottom-end {
+    .popover-arrow {
+      border-bottom: @__boder-black;
+    }
+  }
+
+  .left {
+    .popover-arrow {
+      border-left: @__boder-black;
+    }
+  }
+
+  .left-start {
+    .popover-arrow {
+      border-left: @__boder-black;
+    }
+  }
+
+  .left-end {
+    .popover-arrow {
+      border-left: @__boder-black;
+    }
+  }
+
+  .right {
+    .popover-arrow {
+      border-right: @__boder-black;
+    }
+  }
+
+  .right-start {
+    .popover-arrow {
+      border-right: @__boder-black;
+    }
+  }
+
+  .right-end {
+    .popover-arrow {
+      border-right: @__boder-black;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import "common/icon.less";
+@import "common/color.less";
+@import "mixins/config.less";
+@import "mixins/mixins.less";
+
+.@{namespace}-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  z-index: 50;
+  // min-width: 250px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 15px 15px 15px 20px;
+  overflow: hidden;
+  background-color: #f4f4f5;
+  border: 1px solid #ebeef5;
+  border-radius: 5px;
+  transition: opacity 0.3s, transform 0.4s, top 0.4s;
+  transform: translateX(-50%);
+}
+
+.@{namespace}-message-fade-enter-active,
+.@{namespace}-message-fade-leave-active {
+  opacity: 0;
+  transform: translate(-50%, -100%);
+}
+
+.@{namespace}-message.is-center {
+  justify-content: center;
+}
+
+.@{namespace}-message.is-closable .@{namespace}-message__content {
+  padding-right: 16px;
+}
+
+.@{namespace}-message p {
+  margin: 0;
+}
+
+.@{namespace}-message--info {
+  background-color: #f4f4f5;
+  border-color: #e1f3d8;
+}
+
+.@{namespace}-message--info .@{namespace}-message__content {
+  color: #9b9ea3;
+}
+
+.@{namespace}-message--success {
+  background-color: #f0f9eb;
+  border-color: #e1f3d8;
+}
+
+.@{namespace}-message--success .@{namespace}-message__content {
+  color: #67c23a;
+}
+
+.@{namespace}-message--warning {
+  background-color: #fdf6ec;
+  border-color: #faecd8;
+}
+
+.@{namespace}-message--warning .@{namespace}-message__content {
+  color: #e6a23c;
+}
+
+.@{namespace}-message--error {
+  background-color: #fef0f0;
+  border-color: #fde2e2;
+}
+
+.@{namespace}-message--error .@{namespace}-message__content {
+  color: #f56c6c;
+}
+
+.@{namespace}-message__icon {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.@{namespace}-message__content {
+  padding: 0;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.@{namespace}-message__content:focus {
+  outline-width: 0;
+}
+
+.@{namespace}-message__closeBtn {
+  margin-bottom: 3px;
+  margin-left: 6px;
+  font-size: 14px;
+  color: #c0c4cc;
+  cursor: pointer;
+  transform: translateY(10%);
+}
+
+.@{namespace}-message__closeBtn:focus {
+  outline-width: 0;
+}
+
+.@{namespace}-icon-close::before {
+  content: "\e6a7";
+}
+
+.@{namespace}-message__closeBtn:hover {
+  color: #909399;
+}
+
+.@{namespace}-message .@{namespace}-icon-success {
+  color: #67c23a;
+}
+
+.@{namespace}-message .@{namespace}-icon-error {
+  color: #f56c6c;
+}
+
+.@{namespace}-message .@{namespace}-icon-info {
+  color: #909399;
+}
+
+.@{namespace}-message .@{namespace}-icon-warning {
+  color: #e6a23c;
+}

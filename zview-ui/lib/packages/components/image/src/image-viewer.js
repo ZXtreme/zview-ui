@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const e={visable:{type:Boolean},urlList:{type:Array,default:[]},initialIndex:{type:Number,default:0},infinite:{type:Boolean,default:!0},zoomRate:{type:Number,default:1.2}};exports.imageViewerProps=e;
