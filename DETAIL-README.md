@@ -1,4 +1,12 @@
-# 详细开发介绍
+<div align="center">
+  <img width="130px" style="margin-bottom:24px;" src="./docs/docs/public/logo.png">
+<h1>ZVIEW UI</h1>
+
+<p>基于 Vue3 的客户端组件库</p>
+
+</div>
+
+## 🎃 详细开发介绍
 
 Zview UI 是一个基于 `Vue3` 开发的客户端组件库，全面拥抱 `Vue3` 生态，由 `ZXtreme` 进行维护。
 
@@ -13,7 +21,7 @@ Zview UI 是一个基于 `Vue3` 开发的客户端组件库，全面拥抱 `Vue3
 - 文档库：`vitepress`
 - CI/CD：`gulp`、`github actions`
 
-## Monorepo 项目代码管理方式
+## ✨ Monorepo 项目代码管理方式
 
 通过 `pnpm workspace` 实现 `Monorepo`（一个仓库管理多个项目，实现多个项目的包可以相互引用，即安装在根目录下）
 ```
@@ -40,11 +48,11 @@ PlayGround：有待开发
 
 单元测试：有待开发
 
-## gulp 自动化打包和发布
+## 📦 gulp 自动化打包和发布
 
 使用 gulp 实现组件和文档库的自动化打包和发布
 
-### 组件打包
+### 🚀 组件打包
 1. 移除上次打包的文件
 2. 打包样式
   - 获取每个组件单独的 CSS 文件
@@ -60,15 +68,15 @@ PlayGround：有待开发
   - 在 packages 目录下通过 vite 进行打包（es、commonjs、min.js）
   - 将得到的结果移到 ./zview-ui 目录下
 
-### 组件发布
+### 🛠️ 组件发布
 1. pnpm version patch 更新版本号
 2. 将更新后的 package.json 移到 ./zview-ui 目录下
 3. pnpm publish 发布组件
 
-### 文档库发布
+### 🎯 文档库发布
 1. 对 vitepress 进行打包
 2. 执行 git 命令将 vitepress 打包后的文件 push 到 github 的 site 分支上
  
-### 整个项目 push 到 github
+### 🛠️ 整个项目 push 到 github
 1. 配置项目的 .gitignore 文件，忽略所有的 node_modules
 2. 执行 git 命令将文件 push 到 github 的 main 分支上

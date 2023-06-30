@@ -1,15 +1,11 @@
 import run from './utils/run'
 import { series } from 'gulp'
-import { rootPath, tempPushPath } from './utils/path'
+import { rootPath } from './utils/path'
 
 const project = "zview-ui";
 const remoteGH = "https://github.com/ZXtreme/zview-ui.git";
 const branch = "main";
 
-// 清空 temp-zview-ui 目录
-const clean = async () => {
-  return await run('rimraf ./temp-zview-ui', rootPath)
-}
 
 // 将 dist 目录中的所有文件推送到 GitHub
 const push = async () => {
@@ -23,5 +19,4 @@ const push = async () => {
 
 export default series(
   () => push()
-  // () => clean()
 )
