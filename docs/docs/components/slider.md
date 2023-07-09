@@ -7,7 +7,6 @@ import site from 'exam/slider/site.vue'
 import scope from 'exam/slider/scope.vue'
 import vertical from 'exam/slider/vertical.vue'
 import tag from 'exam/slider/tag.vue'
-// import  from './'
 </script>
 
 # Slider 滑块

@@ -34,7 +34,8 @@ const sidebar = {
         { text: "Link 链接", link: "/components/link" },
         { text: "Container 布局容器", link: "/components/container" },
         { text: "ScrollBar 滚动条", link: "/components/scrollbar" },
-        { text: "Divider 分割线", link: "/components/divider" }
+        { text: "Divider 分割线", link: "/components/divider" },
+        { text: "Space 间距", link: "/components/space" }
       ],
     },
     {

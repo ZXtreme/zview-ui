@@ -31,13 +31,14 @@ import { default as Tag } from "./tag";
 import { Timeline, TimelineItem } from "./timeline";
 import { default as Badge } from "./badge";
 import { default as Image } from "./image";
+import { default as Space } from "./space";
 
 export {
   Button, Icon, Color, Link, Container, Header, Aside, Main, Footer, Scrollbar, Backtop,
   Breadcrumb, BreadcrumbItem, Divider, Alert, Tooltip, Popover, Dialog, Input, InputNumber,
   Radio, Checkbox, CheckboxGroup, Switch, Slider, TimePicker, Drawboard, TimeAxis, Avatar,
   Card, Carousel, Empty, Message, Progress, Result, Tag, Timeline, TimelineItem,
-  Badge, Image
+  Badge, Image, Space
 };
 
 export default [
@@ -45,5 +46,5 @@ export default [
   Breadcrumb, BreadcrumbItem, Divider, Alert, Tooltip, Popover, Dialog, Input, InputNumber,
   Radio, Checkbox, CheckboxGroup, Switch, Slider, TimePicker, Drawboard, TimeAxis, Avatar,
   Card, Carousel, Empty, Message, Progress, Result, Tag, Timeline, TimelineItem,
-  Badge, Image
+  Badge, Image, Space
 ];

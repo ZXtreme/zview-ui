@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/gulp": "^4.0.10",
     "@types/gulp-autoprefixer": "^0.0.33",

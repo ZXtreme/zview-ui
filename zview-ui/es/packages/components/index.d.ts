@@ -31,7 +31,8 @@ import { default as Tag } from "./tag";
 import { Timeline, TimelineItem } from "./timeline";
 import { default as Badge } from "./badge";
 import { default as Image } from "./image";
-export { Button, Icon, Color, Link, Container, Header, Aside, Main, Footer, Scrollbar, Backtop, Breadcrumb, BreadcrumbItem, Divider, Alert, Tooltip, Popover, Dialog, Input, InputNumber, Radio, Checkbox, CheckboxGroup, Switch, Slider, TimePicker, Drawboard, TimeAxis, Avatar, Card, Carousel, Empty, Message, Progress, Result, Tag, Timeline, TimelineItem, Badge, Image };
+import { default as Space } from "./space";
+export { Button, Icon, Color, Link, Container, Header, Aside, Main, Footer, Scrollbar, Backtop, Breadcrumb, BreadcrumbItem, Divider, Alert, Tooltip, Popover, Dialog, Input, InputNumber, Radio, Checkbox, CheckboxGroup, Switch, Slider, TimePicker, Drawboard, TimeAxis, Avatar, Card, Carousel, Empty, Message, Progress, Result, Tag, Timeline, TimelineItem, Badge, Image, Space };
 declare const _default: (({
     name: string;
 } & ((app: import("vue").App<any>, ...options: any[]) => any) & {

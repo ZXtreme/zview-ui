@@ -1,13 +1,13 @@
 import r from "./components/index.mjs";
-import { default as l } from "./components/button/index.mjs";
+import { default as p } from "./components/button/index.mjs";
 import { default as s } from "./components/icon/index.mjs";
 import { default as u } from "./components/color/index.mjs";
 import { default as i } from "./components/link/index.mjs";
 import { Aside as c, Container as b, Footer as g, Header as C, Main as I } from "./components/container/index.mjs";
 import { default as k } from "./components/scrollbar/index.mjs";
 import { default as h } from "./components/backtop/index.mjs";
-import { Breadcrumb as v, BreadcrumbItem as D } from "./components/breadcrumb/index.mjs";
-import { default as S } from "./components/divider/index.mjs";
+import { Breadcrumb as S, BreadcrumbItem as v } from "./components/breadcrumb/index.mjs";
+import { default as P } from "./components/divider/index.mjs";
 import { default as E } from "./components/alert/index.mjs";
 import { default as R } from "./components/tooltip/index.mjs";
 import { default as F } from "./components/popover/index.mjs";
@@ -23,7 +23,7 @@ import { default as $ } from "./components/drawboard/index.mjs";
 import { default as oe } from "./components/time-axis/index.mjs";
 import { default as te } from "./components/avatar/index.mjs";
 import { default as fe } from "./components/card/index.mjs";
-import { default as le } from "./components/carousel/index.mjs";
+import { default as pe } from "./components/carousel/index.mjs";
 import { default as se } from "./components/empty/index.mjs";
 import { default as ue } from "./components/message/src/index.mjs";
 import { default as ie } from "./components/progress/index.mjs";
@@ -32,6 +32,7 @@ import { default as ge } from "./components/tag/index.mjs";
 import { Timeline as Ie, TimelineItem as Te } from "./components/timeline/index.mjs";
 import { default as Be } from "./components/badge/index.mjs";
 import { default as Ae } from "./components/image/index.mjs";
+import { default as ve } from "./components/space/index.mjs";
 const a = {
   install: (e) => {
     r.forEach((o) => e.use(o));
@@ -43,17 +44,17 @@ export {
   te as Avatar,
   h as Backtop,
   Be as Badge,
-  v as Breadcrumb,
-  D as BreadcrumbItem,
-  l as Button,
+  S as Breadcrumb,
+  v as BreadcrumbItem,
+  p as Button,
   fe as Card,
-  le as Carousel,
+  pe as Carousel,
   O as Checkbox,
   Q as CheckboxGroup,
   u as Color,
   b as Container,
   H as Dialog,
-  S as Divider,
+  P as Divider,
   $ as Drawboard,
   se as Empty,
   g as Footer,
@@ -71,6 +72,7 @@ export {
   ce as Result,
   k as Scrollbar,
   X as Slider,
+  ve as Space,
   V as Switch,
   ge as Tag,
   oe as TimeAxis,

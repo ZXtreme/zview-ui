@@ -3,7 +3,6 @@ import basic from 'exam/scrollbar/basic.vue'
 import scrollbarX from 'exam/scrollbar/scrollbar-x.vue'
 import maxHeight from 'exam/scrollbar/max-height.vue'
 import manual from 'exam/scrollbar/manual.vue'
-// import  from './'
 </script>
 
 # Scrollbar 滚动条
