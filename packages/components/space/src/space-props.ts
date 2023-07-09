@@ -22,7 +22,7 @@ export const SpaceProps = {
     type: Boolean,
     default: false,
   },
-  // 所有子节点在容器内垂直方向上的对齐方式
+  // 所有子节点在容器内部侧轴方向上的对齐方式
   alignment: {
     type: String,
     values: ['stretch', 'center', 'flex-start', 'flex-end', 'baseline', 'initial', 'inherit'],

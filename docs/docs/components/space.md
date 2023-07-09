@@ -63,10 +63,10 @@
 
 ### 属性
  
-| 参数      | 说明                                   | 类型      | 可选值                                                                  | 默认值     |
-| --------- | -------------------------------------- | --------- | ----------------------------------------------------------------------- | ---------- |
-| inline    | 容器是否为 inline 元素                 | `boolean` | true / false                                                            | false      |
-| direction | 排列的方向                             | `string`  | vertical / horizontal                                                   | horizontal |
-| size      | 间隔大小                               | `array`   | [row, col] / [all]                                                      | [10, 10]   |
-| wrap      | 设置是否自动换行                       | `boolean` | true / false                                                            | false      |
-| alignment | 所有子节点在容器内垂直方向上的对齐方式 | `string`  | stretch / center / flex-start / flex-end / baseline / initial / inherit | center     |
+| 参数      | 说明                                     | 类型      | 可选值                                                                  | 默认值     |
+| --------- | ---------------------------------------- | --------- | ----------------------------------------------------------------------- | ---------- |
+| inline    | 容器是否为 inline 元素                   | `boolean` | true / false                                                            | false      |
+| direction | 排列的方向                               | `string`  | vertical / horizontal                                                   | horizontal |
+| size      | 间隔大小                                 | `array`   | [row, col] / [all]                                                      | [10, 10]   |
+| wrap      | 设置是否自动换行                         | `boolean` | true / false                                                            | false      |
+| alignment | 所有子节点在容器内部侧轴方向上的对齐方式 | `string`  | stretch / center / flex-start / flex-end / baseline / initial / inherit | center     |
