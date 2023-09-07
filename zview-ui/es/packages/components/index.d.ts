@@ -18,7 +18,7 @@ import { Checkbox, CheckboxGroup } from "./checkbox-group";
 import { default as Switch } from "./switch";
 import { default as Slider } from "./slider";
 import { default as TimePicker } from "./time-picker";
-import { default as Drawboard } from "./drawboard";
+import { default as Signature } from "./signature";
 import { default as TimeAxis } from "./time-axis";
 import { default as Avatar } from "./avatar";
 import { default as Card } from "./card";
@@ -32,7 +32,7 @@ import { Timeline, TimelineItem } from "./timeline";
 import { default as Badge } from "./badge";
 import { default as Image } from "./image";
 import { default as Space } from "./space";
-export { Button, Icon, Color, Link, Container, Header, Aside, Main, Footer, Scrollbar, Backtop, Breadcrumb, BreadcrumbItem, Divider, Alert, Tooltip, Popover, Dialog, Input, InputNumber, Radio, Checkbox, CheckboxGroup, Switch, Slider, TimePicker, Drawboard, TimeAxis, Avatar, Card, Carousel, Empty, Message, Progress, Result, Tag, Timeline, TimelineItem, Badge, Image, Space };
+export { Button, Icon, Color, Link, Container, Header, Aside, Main, Footer, Scrollbar, Backtop, Breadcrumb, BreadcrumbItem, Divider, Alert, Tooltip, Popover, Dialog, Input, InputNumber, Radio, Checkbox, CheckboxGroup, Switch, Slider, TimePicker, Signature, TimeAxis, Avatar, Card, Carousel, Empty, Message, Progress, Result, Tag, Timeline, TimelineItem, Badge, Image, Space };
 declare const _default: (({
     name: string;
 } & ((app: import("vue").App<any>, ...options: any[]) => any) & {

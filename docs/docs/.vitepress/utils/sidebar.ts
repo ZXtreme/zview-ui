@@ -86,7 +86,7 @@ const sidebar = {
       text: "Others 其他",
       items: [
         { text: "TimeAxis 时间轴", link: "/components/timeaxis" },
-        { text: "Drawboard 画板", link: "/components/drawboard" }
+        { text: "Signature 签名", link: "/components/signature" }
       ],
     },
   ],

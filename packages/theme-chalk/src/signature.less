@@ -1,0 +1,34 @@
+@import "common/icon.less";
+@import "common/color.less";
+@import "mixins/config.less";
+@import "mixins/mixins.less";
+
+
+.@{namespace}-signature{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .@{namespace}-signature__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border: var(--hv-signature-content-border);
+    border-radius: var(--hv-signature-radius);
+    overflow: hidden;
+    canvas{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .@{namespace}-signature__footer{
+    display: flex;
+    justify-content: flex-end;
+    .@{namespace}-button{
+      margin-top: var(--hv-signature-margin);
+      margin-left: var(--hv-signature-margin);
+    }
+  }  
+}
